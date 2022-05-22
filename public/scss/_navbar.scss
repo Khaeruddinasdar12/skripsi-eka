@@ -1,0 +1,169 @@
+@media (max-width: 1024px) {
+    .kt-header-menu-mobile .kt-menu__nav>.kt-menu__item>.kt-menu__link .kt-menu__link-text {
+        color: $galungcolor !important;
+    }
+
+    .kt-header__topbar .kt-header__topbar-item .kt-header__topbar-wrapper .kt-header__topbar-icon i {
+        color: $galungcolor !important;
+    }
+}
+
+.galung-header-mobile {
+    background-color: $galungcolor !important;
+
+    .logo-mobile {
+        width: 130px;
+    }
+
+    .kt-header-mobile__toolbar-toggler span {
+        background-color: #fff !important;
+
+        &::before,
+        &::after {
+            background-color: #fff !important;
+        }
+    }
+
+    .kt-header-mobile__toolbar-topbar-toggler i {
+        color: #fff !important;
+    }
+}
+
+.galung-header {
+    background-color: $galungcolor !important;
+    box-shadow: 0 0 40px rgba(34, 34, 34, 0.801) !important;
+    -webkit-box-shadow: 0 0 10px rgba(34, 34, 34, 0.801) !important;
+    -moz-box-shadow: 0 0 10px rgba(34, 34, 34, 0.801) !important;
+
+    .kt-header__brand {
+        justify-content: flex-start;
+        width: fit-content;
+        max-width: fit-content;
+
+        .logogalung {
+            width: 150px;
+            padding-right: 20px;
+        }
+
+        .border-right {
+            width: 1px;
+            height: 50px;
+            background: #fff;
+            margin-right: 30px;
+        }
+    }
+
+    li {
+        .kt-nav__link-badge {
+            margin-left: 5px !important;
+
+            span {
+                color: #fff !important;
+                background-color: rgba(255, 255, 255, 0.376) !important;
+            }
+
+            .active-badge {
+                color: #fff !important;
+                background-color: rgba(0, 168, 90, 0.452) !important;
+            }
+        }
+
+        .badge-submenu {
+            span {
+                color: $galungcolor !important;
+                background-color: rgba(0, 168, 90, 0.102) !important;
+            }
+        }
+    }
+
+    .kt-header-menu {
+        .kt-menu__item {
+            a {
+                .kt-menu__link-text {
+                    color: $galungcolor !important;
+                }
+
+                .top-text-nav {
+                    color: #fff !important;
+                }
+
+                .fa-angle-down {
+                    color: rgba(255, 255, 255, 0.65) !important;
+                    padding-left: 10px;
+                    padding-top: 3px;
+                    transition: .5s;
+                }
+
+                .icon-here {
+                    color: $galungcolor !important;
+                }
+
+                &:hover .fa-angle-down,
+                &:focus .fa-angle-down {
+                    color: #fff !important;
+                    transition: .5s;
+                    margin-top: 3px !important;
+                }
+
+                &:hover .icon-here {
+                    color: #591df1 !important;
+                    transition: .5s;
+                }
+            }
+
+            .kt-menu__submenu {
+                width: 200px !important;
+            }
+        }
+
+        #manageuser {
+            width: 120px;
+        }
+
+        #gadaisawah,
+        #modaltanam {
+            width: 167px;
+        }
+
+        #bibitpupuk,
+        #manageadmin {
+            width: 130px;
+
+            .kt-menu__link-text {
+                justify-content: center;
+            }
+        }
+    }
+
+    .kt-header__topbar {
+        .search-topbar {
+            .flaticon2-search-1 {
+                color: #fff !important;
+            }
+
+            &:hover .flaticon2-search-1 {
+                color: $galungcolor !important;
+            }
+
+            &:focus {
+                background-color: transparent !important;
+            }
+        }
+
+        .user-topbar {
+            .kt-visible-desktop {
+                color: #fff !important;
+            }
+
+            .btn-logout-user {
+                background-color: $galungcolor;
+                color: #fff;
+
+                &:hover {
+                    background-color: $galungcolorhover;
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,25 @@
+.admin-portlet {
+    .kt-portlet__head-icon {
+        i {
+            font-size: 25px;
+            color: $galungcolor;
+        }
+    }
+
+    .kt-portlet__head-actions {
+        .btn-tambah-data {
+            i {
+                font-size: 25px !important;
+                color: $galungcolor;
+            }
+
+            &:hover {
+                @extend %galung-button-fill;
+            }
+
+            &:hover i {
+                color: #fff;
+            }
+        }
+    }
+}

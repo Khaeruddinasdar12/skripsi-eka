@@ -1,0 +1,88 @@
+.action {
+    select {
+        margin-top: 10px !important;
+        margin-left: 5px;
+    }
+
+    .reload-laporan {
+        margin-right: -20px !important;
+        margin-left: -10px !important;
+        border: none !important;
+
+        &:hover {
+            background-color: transparent !important;
+        }
+
+        &:hover i {
+            background-color: $galungcolor;
+            color: #fff !important;
+            transition: .5s;
+        }
+
+        i {
+            font-size: 20px !important;
+            color: $galungcolor !important;
+            border-radius: 5px;
+            transition: .5s;
+            padding: 11px !important;
+        }
+    }
+
+    .download-btn {
+        i {
+            font-size: 20px !important;
+            color: $galungcolor !important;
+            padding: 11px !important;
+            border-radius: 5px;
+            transition: .5s;
+
+            &:hover {
+                background-color: $galungcolor;
+                color: #fff !important;
+                transition: .5s;
+            }
+        }
+    }
+
+    .dropdown-menu {
+        .kt-nav__item {
+            div {
+                form {
+                    width: 100% !important;
+
+                    button {
+                        width: 100% !important;
+                        border: none !important;
+                        margin-bottom: 10px !important;
+                        text-align: left !important;
+                        padding-left: 30px;
+
+                        &:hover {
+                            background-color: rgb(243, 243, 243) !important;
+                        }
+
+                        &:hover .fa-file-pdf {
+                            color: $merah;
+                            transition: .5s;
+                        }
+
+                        &:hover .fa-file-excel {
+                            color: $galungcolor;
+                            transition: .5s;
+                        }
+
+                        i,
+                        span {
+                            color: rgb(136, 136, 136);
+                            font-size: 15px !important;
+                        }
+
+                        i {
+                            transition: .5s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
