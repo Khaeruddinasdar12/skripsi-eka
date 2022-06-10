@@ -68,14 +68,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                  <div class="col-md-12">
-                    <div class="form-group ">
-                      <label>Role</label> : 
-                      <b>{{ Auth::guard('admin')->user()->role }}</b>
-                    </div>
-                  </div>
-                </div>
+                
                   <div class="col-md-12">
                     <button type="button" class="btn btn-danger btn-sm" data-dismiss="modal" aria-label="Close">Cancel</button>
                     <button type="submit" class="btn btn-success btn-flat btn-sm float-right" >Submit</button>

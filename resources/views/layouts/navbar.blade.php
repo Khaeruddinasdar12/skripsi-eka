@@ -50,7 +50,7 @@
           <!-- end manage barang -->
 
           <!-- modal tanam menu -->
-          <li class="kt-menu__item  kt-menu__item--submenu kt-menu__item--rel {{ request()->is('admin/daftar-modal-tanam') || request()->is('admin/sedang-modal-tanam') || request()->is('admin/riwayat-modal-tanam') ? 'kt-menu__item--open kt-menu__item--here' : '' }}" data-ktmenu-submenu-toggle="hover" aria-haspopup="true">
+        <!--   <li class="kt-menu__item  kt-menu__item--submenu kt-menu__item--rel {{ request()->is('admin/daftar-modal-tanam') || request()->is('admin/sedang-modal-tanam') || request()->is('admin/riwayat-modal-tanam') ? 'kt-menu__item--open kt-menu__item--here' : '' }}" data-ktmenu-submenu-toggle="hover" aria-haspopup="true">
             <a href="javascript:;" class="kt-menu__link kt-menu__toggle" id="modaltanam">
               <span class="kt-menu__link-text {{ request()->is('admin/daftar-modal-tanam') || request()->is('admin/sedang-modal-tanam') || request()->is('admin/riwayat-modal-tanam') ? '' : 'top-text-nav' }}">
                 Modal Tanam
@@ -81,11 +81,11 @@
                 </li>
               </ul>
             </div>
-          </li>
+          </li> -->
           <!-- end modal tanam -->
 
           <!-- sawah menu -->
-          <li class="kt-menu__item  kt-menu__item--submenu kt-menu__item--rel {{ request()->is('admin/daftar-gadai-lahan') || request()->is('admin/sedang-gadai-lahan') || request()->is('admin/riwayat-gadai-lahan') ? 'kt-menu__item--open kt-menu__item--here' : '' }}" data-ktmenu-submenu-toggle="hover" aria-haspopup="true">
+        <!--   <li class="kt-menu__item  kt-menu__item--submenu kt-menu__item--rel {{ request()->is('admin/daftar-gadai-lahan') || request()->is('admin/sedang-gadai-lahan') || request()->is('admin/riwayat-gadai-lahan') ? 'kt-menu__item--open kt-menu__item--here' : '' }}" data-ktmenu-submenu-toggle="hover" aria-haspopup="true">
             <a href="javascript:;" class="kt-menu__link kt-menu__toggle" id="gadaisawah">
               <span class="kt-menu__link-text {{ request()->is('admin/daftar-gadai-lahan') || request()->is('admin/sedang-gadai-lahan') || request()->is('admin/riwayat-gadai-lahan') ? '' : 'top-text-nav' }}">
                 Gadai Lahan
@@ -121,12 +121,12 @@
                 </li>
               </ul>
             </div>
-          </li>
+          </li> -->
           <!-- end sawah -->
           
 
           <!-- transaksi menu -->
-          <li class="kt-menu__item  kt-menu__item--submenu kt-menu__item--rel {{ request()->is('admin/transaksi-barang') || request()->is('admin/riwayat-transaksi-barang') ? 'kt-menu__item--open kt-menu__item--here' : '' }}" data-ktmenu-submenu-toggle="hover" aria-haspopup="true">
+   <!--        <li class="kt-menu__item  kt-menu__item--submenu kt-menu__item--rel {{ request()->is('admin/transaksi-barang') || request()->is('admin/riwayat-transaksi-barang') ? 'kt-menu__item--open kt-menu__item--here' : '' }}" data-ktmenu-submenu-toggle="hover" aria-haspopup="true">
             <a href="javascript:;" class="kt-menu__link kt-menu__toggle">
               <span class="kt-menu__link-text {{ request()->is('admin/transaksi-barang') || request()->is('admin/riwayat-transaksi-barang') ? '' : 'top-text-nav' }}">
                 Transaksi
@@ -157,15 +157,15 @@
                 </li>
               </ul>
             </div>
-          </li>
+          </li> -->
           <!-- end transaksi menu -->
           
           <!-- manage user menu -->
-          <li class="kt-menu__item kt-menu__item--rel {{ request()->is('admin/manage-user') ? 'kt-menu__item--open kt-menu__item--here' : '' }}">
+       <!--    <li class="kt-menu__item kt-menu__item--rel {{ request()->is('admin/manage-user') ? 'kt-menu__item--open kt-menu__item--here' : '' }}">
             <a href="{{ route('verified.manage-user.skripsi') }}" class="kt-menu__link" id="manageadmin">
               <span class="kt-menu__link-text kt-menu__link-text {{ request()->is('admin/manage-user') ? '' : 'top-text-nav' }}">Manage User</span>
             </a>
-          </li>
+          </li> -->
           <!-- end manage user -->
 
           <!-- manage admin menu -->
@@ -177,7 +177,7 @@
           <!-- end manage admin -->
 
           <!-- transaksi menu -->
-          <li class="kt-menu__item  kt-menu__item--submenu kt-menu__item--rel {{ request()->is('admin/laporan') || request()->is('admin/laporan-sawah-gabah') ? 'kt-menu__item--open kt-menu__item--here' : '' }}" data-ktmenu-submenu-toggle="hover" aria-haspopup="true">
+         <!--  <li class="kt-menu__item  kt-menu__item--submenu kt-menu__item--rel {{ request()->is('admin/laporan') || request()->is('admin/laporan-sawah-gabah') ? 'kt-menu__item--open kt-menu__item--here' : '' }}" data-ktmenu-submenu-toggle="hover" aria-haspopup="true">
             <a href="javascript:;" class="kt-menu__link kt-menu__toggle">
               <span class="kt-menu__link-text {{ request()->is('admin/laporan') || request()->is('admin/laporan-sawah-gabah') ? '' : 'top-text-nav' }}">
                 Laporan
@@ -200,7 +200,7 @@
                 </li>
               </ul>
             </div>
-          </li>
+          </li> -->
           <!-- end transaksi menu -->
 
         </ul>

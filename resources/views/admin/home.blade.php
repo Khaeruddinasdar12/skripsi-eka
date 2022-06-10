@@ -52,7 +52,7 @@
                 </div>
                 <div class="kt-widget5__stats">
                   <span class="kt-widget5__number">
-                    <a href="{{ route('index.transaksi') }}" class="btn-label-brand btn btn-sm btn-bold">Lihat Transaksi</a>
+                    <a href="{{-- route('index.transaksi') --}}" class="btn-label-brand btn btn-sm btn-bold">Lihat Transaksi</a>
                   </span>
                 </div>
               </div>
@@ -67,7 +67,7 @@
         <div class="kt-portlet__body">
           <h3>Data Lahan</h3>
           <div class="kt-widget4">
-            <a href="{{ route('daftar.gadaisawah.skripsi') }}" class="kt-widget4__item">
+            <a href="{{-- route('daftar.gadaisawah.skripsi') --}}" class="kt-widget4__item">
               <div class="kt-widget4__pic kt-widget4__pic--logo">
                 <img src="{{ asset('img/card/sawah.jpg') }}" alt="gadai-sawah">
               </div>
@@ -81,7 +81,7 @@
               </div>
               <span class="kt-widget4__number kt-font-brand">{{ $jmlgs }} Data</span>
             </a>
-            <a href="{{ route('daftar.modaltanam.skripsi') }}" class="kt-widget4__item">
+            <a href="{{-- route('daftar.modaltanam.skripsi') --}}" class="kt-widget4__item">
               <div class="kt-widget4__pic kt-widget4__pic--logo">
                 <img src="{{ asset('img/card/tanam.jpg') }}" alt="modal-tanam">
               </div>
