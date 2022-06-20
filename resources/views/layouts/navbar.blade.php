@@ -50,7 +50,7 @@
           <!-- end manage barang -->
 
           <!-- modal tanam menu -->
-        <!--   <li class="kt-menu__item  kt-menu__item--submenu kt-menu__item--rel {{ request()->is('admin/daftar-modal-tanam') || request()->is('admin/sedang-modal-tanam') || request()->is('admin/riwayat-modal-tanam') ? 'kt-menu__item--open kt-menu__item--here' : '' }}" data-ktmenu-submenu-toggle="hover" aria-haspopup="true">
+          <li class="kt-menu__item  kt-menu__item--submenu kt-menu__item--rel {{ request()->is('admin/daftar-modal-tanam') || request()->is('admin/sedang-modal-tanam') || request()->is('admin/riwayat-modal-tanam') ? 'kt-menu__item--open kt-menu__item--here' : '' }}" data-ktmenu-submenu-toggle="hover" aria-haspopup="true">
             <a href="javascript:;" class="kt-menu__link kt-menu__toggle" id="modaltanam">
               <span class="kt-menu__link-text {{ request()->is('admin/daftar-modal-tanam') || request()->is('admin/sedang-modal-tanam') || request()->is('admin/riwayat-modal-tanam') ? '' : 'top-text-nav' }}">
                 Modal Tanam
@@ -81,11 +81,11 @@
                 </li>
               </ul>
             </div>
-          </li> -->
+          </li>
           <!-- end modal tanam -->
 
-          <!-- sawah menu -->
-        <!--   <li class="kt-menu__item  kt-menu__item--submenu kt-menu__item--rel {{ request()->is('admin/daftar-gadai-lahan') || request()->is('admin/sedang-gadai-lahan') || request()->is('admin/riwayat-gadai-lahan') ? 'kt-menu__item--open kt-menu__item--here' : '' }}" data-ktmenu-submenu-toggle="hover" aria-haspopup="true">
+          <!-- Gadai Lahan menu -->
+          <li class="kt-menu__item  kt-menu__item--submenu kt-menu__item--rel {{ request()->is('admin/daftar-gadai-lahan') || request()->is('admin/sedang-gadai-lahan') || request()->is('admin/riwayat-gadai-lahan') ? 'kt-menu__item--open kt-menu__item--here' : '' }}" data-ktmenu-submenu-toggle="hover" aria-haspopup="true">
             <a href="javascript:;" class="kt-menu__link kt-menu__toggle" id="gadaisawah">
               <span class="kt-menu__link-text {{ request()->is('admin/daftar-gadai-lahan') || request()->is('admin/sedang-gadai-lahan') || request()->is('admin/riwayat-gadai-lahan') ? '' : 'top-text-nav' }}">
                 Gadai Lahan
@@ -121,8 +121,8 @@
                 </li>
               </ul>
             </div>
-          </li> -->
-          <!-- end sawah -->
+          </li>
+          <!-- end Gadai Lahan -->
           
 
           <!-- transaksi menu -->
