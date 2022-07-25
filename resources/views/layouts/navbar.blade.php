@@ -126,7 +126,7 @@
           
 
           <!-- transaksi menu -->
-   <!--        <li class="kt-menu__item  kt-menu__item--submenu kt-menu__item--rel {{ request()->is('admin/transaksi-barang') || request()->is('admin/riwayat-transaksi-barang') ? 'kt-menu__item--open kt-menu__item--here' : '' }}" data-ktmenu-submenu-toggle="hover" aria-haspopup="true">
+           <li class="kt-menu__item  kt-menu__item--submenu kt-menu__item--rel {{ request()->is('admin/transaksi-barang') || request()->is('admin/riwayat-transaksi-barang') ? 'kt-menu__item--open kt-menu__item--here' : '' }}" data-ktmenu-submenu-toggle="hover" aria-haspopup="true">
             <a href="javascript:;" class="kt-menu__link kt-menu__toggle">
               <span class="kt-menu__link-text {{ request()->is('admin/transaksi-barang') || request()->is('admin/riwayat-transaksi-barang') ? '' : 'top-text-nav' }}">
                 Transaksi
@@ -168,6 +168,7 @@
           </li> -->
           <!-- end manage user -->
 
+             @if(Auth::guard('admin')->user()->role == 'superadmin')
           <!-- manage admin menu -->
           <li class="kt-menu__item kt-menu__item--rel {{ request()->is('admin/manage-admin') ? 'kt-menu__item--open kt-menu__item--here' : '' }}">
             <a href="{{ route('index.manage-admin') }}" class="kt-menu__link" id="manageadmin">
@@ -177,7 +178,7 @@
           <!-- end manage admin -->
 
           <!-- transaksi menu -->
-         <!--  <li class="kt-menu__item  kt-menu__item--submenu kt-menu__item--rel {{ request()->is('admin/laporan') || request()->is('admin/laporan-sawah-gabah') ? 'kt-menu__item--open kt-menu__item--here' : '' }}" data-ktmenu-submenu-toggle="hover" aria-haspopup="true">
+           <li class="kt-menu__item  kt-menu__item--submenu kt-menu__item--rel {{ request()->is('admin/laporan') || request()->is('admin/laporan-sawah-gabah') ? 'kt-menu__item--open kt-menu__item--here' : '' }}" data-ktmenu-submenu-toggle="hover" aria-haspopup="true">
             <a href="javascript:;" class="kt-menu__link kt-menu__toggle">
               <span class="kt-menu__link-text {{ request()->is('admin/laporan') || request()->is('admin/laporan-sawah-gabah') ? '' : 'top-text-nav' }}">
                 Laporan
@@ -202,7 +203,9 @@
             </div>
           </li> -->
           <!-- end transaksi menu -->
-
+        @endif
+        
+        
         </ul>
       </div>
     </div>
