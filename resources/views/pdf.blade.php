@@ -16,7 +16,6 @@
 	</center>
  
 	<table class="table table-bordered">
-                      <thead>
                         <tr>
                           <th>#</th>
                           <th>Kode Transaksi</th>
@@ -26,9 +25,7 @@
                           <th>Jenis Pembayaran</th>
                           <th>Akun</th>
                         </tr>
-                      </thead>
-
-                      <tbody>
+                     
                         @php $no = 1; @endphp
                         @foreach($data as $datas)
                         <tr>
@@ -37,11 +34,10 @@
                           <td>{{$datas->penerima}}</td>
                           <td>{{$datas->nohp}}</td>
                           <td>Rp. {{format_uang($datas->total)}}</td>
-                          <td>Cash On Delivery
-                          </td>
+                          <td>Cash On Delivery</td>
                           <td>{{$datas->users->name}}</td>
                         </tr>
-                        <thead>
+                        
                         <tr>
                           <td></td>
                           <td rowspan="{{ $datas->items->count() + 1}}"></td>
@@ -51,7 +47,7 @@
                           <th>jumlah</th>
                           <th>subtotal</th>
                         </tr>
-                        </thead>
+                        
                         @foreach($datas->items as $items)
                         <tr>
                           <td></td>
@@ -63,11 +59,12 @@
                         </tr>
                         @endforeach
                         <tr>
-                          <th colspan="4">Total</th>
+                            <th colspan="5"></th>
+                          <th >Total</th>
                           <th>Rp. {{format_uang($datas->total)}}</th>
                         </tr>
                         @endforeach
-                      </tbody>
+               
                     </table>
  
 </body>

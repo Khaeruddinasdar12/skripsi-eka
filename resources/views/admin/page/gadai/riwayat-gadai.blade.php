@@ -119,7 +119,7 @@
                       <!-- End jika admin tersedia atau tidak -->
                       <tr>
                         <th scope="row">{{$no++}}</th>
-                        <td>{{$gadai->kode}}</td>
+                        <td>{{$gadais->kode}}</td>
                         <td>{{$gadais -> users -> name}}</td>
                         <td>{{$gadais -> periode}}</td>
                         <td>Rp.{{format_uang($gadais -> harga)}}</td>

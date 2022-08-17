@@ -163,7 +163,7 @@
                           <td>{{$datas->penerima}}</td>
                           <td>{{$datas->nohp}}</td>
                           <td>Rp. {{format_uang($datas->total)}}</td>
-                          <td>Cash On Delivery
+                          <td>Transfer
                           </td>
                           <td>{{$datas->users->name}}</td>
                         </tr>

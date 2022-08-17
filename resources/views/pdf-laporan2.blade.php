@@ -12,13 +12,11 @@
 		}
 	</style>
 	<center>
-		<h5>Laporan Keuangan Gabah & Sawah {{$bln .' '. $thn}} </h5>
+		<h5>Laporan Keuangan Gadai {{$bln .' '. $thn}} </h5>
 	</center>
  
 	<table class="table table-bordered">
-                      <thead>
                         <tr>
-                          <tr>
                           <th>No</th>
                           <th>Nama Pemohon</th>
                           <th>Jenis</th>
@@ -26,10 +24,7 @@
                           <th>Periode</th>
                           <th>Harga</th>
                         </tr>
-                        </tr>
-                      </thead>
 
-                      <tbody>
                         @php $no = 1; $total = 0;@endphp
                         @foreach($data as $datas)
                         <tr class="table">
@@ -47,8 +42,8 @@
                           <th>Total</th>
                           <th>Rp. {{format_uang($total)}}</th>
                         </tr>
-                      </tbody>
-                    </table>
+                   
+</table>
  
 </body>
 </html>

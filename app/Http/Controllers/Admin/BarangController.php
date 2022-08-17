@@ -6,6 +6,9 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Barang;
 use Auth;
+use App\CartTransaksi;
+use QueryException;
+use Exception;
 class BarangController extends Controller
 {
     public function __construct()
@@ -141,12 +144,23 @@ class BarangController extends Controller
 
     public function delete($id)
     {
-        $data = Barang::findOrFail($id);
-        if ($data->gambar && file_exists(storage_path('app/public/' . $data->gambar))) {
+        try{
+            $cek = CartTransaksi::where('barang_id', $id)->get();
+            if($cek) {
+                return redirect()->back()->with('error', 'Barang ini berada di tabel lainnya!');
+            }
+            $data = Barang::findOrFail($id);
+            if ($data->gambar && file_exists(storage_path('app/public/' . $data->gambar))) {
                 \Storage::delete('public/' . $data->gambar);
             }
-        $data->delete();
+            $data->delete();
+            return redirect()->back()->with('success', 'Berhasil menghapus data barang');
+        }catch(Exception $e){
+            return redirect()->back()->with('error', $e->getMessage());
+        }catch(QueryException $e){
+            return redirect()->back()->with('error', $e->getMessage());
+        }
 
-        return redirect()->back()->with('success', 'Berhasil menghapus data barang');
+        
     }
 }
